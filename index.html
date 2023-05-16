@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>계산기만들기 실습</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-lg">
+        <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
+          나만의 계산기 만들기
+        </h1>
+
+        <p class="mx-auto mt-4 max-w-md text-center text-gray-500">
+          계산을 간편하게 해보자:)
+        </p>
+
+        <div>
+            <label for="birthday" class="text-sm font-bold">계산 식</label>
+            <div class="relative mt-1">
+                <input
+                type="text"
+                id="display"
+                class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
+                />
+            </div>
+            <label for="birthday" class="text-sm font-bold">계산 결과</label>
+
+            <div class="relative mt-1">
+                <input
+                type="text"
+                id="result"
+                class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
+                />
+            </div>
+        </div>
+        <div class="relative mt-5" style="text-align: center; padding-bottom: 20px; border: 1px solid black;">
+            <div>
+            <label for="age" class="text-sm font-bold">계산기</label>
+
+            </div>
+            <div class="first_line">
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(0)"
+                >
+                0
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(1)"
+                >
+                1
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(2)"
+                >
+                2
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(3)"
+                >
+                3
+                </button>
+            </div>
+            <div class="second_line">
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(4)"
+                >
+                4
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(5)"
+                >
+                5
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(6)"
+                >
+                6
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(7)"
+                >
+                7
+                </button>
+            </div>
+            <div class="third_line">
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(8)"
+                >
+                8
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add(9)"
+                >
+                9
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add('+')"
+                >
+                +            
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add('-')"
+                >
+                -
+                </button>
+            </div>
+            <div class="fourth_line">
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add('*')"
+                >
+                *
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="add('/')"
+                >
+                /
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="reset()"
+                >
+                C            
+                </button>
+                <button
+                id="submit"
+                class=" rounded-lg bg-indigo-600 mt-8 px-7 py-3 text-sm font-medium text-white"
+                onclick="calculate()"
+                >
+                =
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="d.js"></script>
+  </body>
+</html>
